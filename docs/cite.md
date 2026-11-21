@@ -34,7 +34,7 @@ The text of the license is the file `LICENSE` in the SWATrust folder. Its copyri
 Copyright (c) 2026 Duc Tran
 ```
 
-The tutorial and its videos carry the line "© 2026 Duc Tran. This tutorial and its videos are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/." They are not under the MIT License. Under CC BY 4.0 you may copy, change and pass on the tutorial and its videos if you name the author, give the address of the license and say what you changed.
+Every page of the tutorial carries the line "© 2026 Duc Tran. This tutorial and its videos are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/." at its foot. The line covers the videos too. They are not under the MIT License. Under CC BY 4.0 you may copy, change and pass on the tutorial and its videos if you name the author, give the address of the license and say what you changed.
 
 The maps of the page are drawn from the Watershed Boundary Dataset (the outlines of the hydrologic units), NHDPlus V2.1 (streams and water bodies) and GMTED2010 (elevation).
 
