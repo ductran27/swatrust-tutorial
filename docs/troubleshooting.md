@@ -99,6 +99,7 @@ What to do: the model cannot be run with this version. One sentence of this kind
 #### A model that the engine could not read
 
 You see "The engine could not read this model. One of its files is missing, cannot be read, or does not match the others." The engine stopped while it read the files of the model. An example: a record that one file names is not in the other file.
+
 What to do: mend the file in the model folder and read the model again.
 
 #### A point-source file that is missing or holds no data
@@ -114,6 +115,7 @@ The list **Output tables** in Set-up shows such a table as a row whose boxes can
 ## A period is refused
 
 Set-up or **Start the run** refuses a period that the model cannot run, before any run, and names the years that can be typed. Type a year in the range that the sentence names. [Run streamflow](run-streamflow.md#years-the-page-refuses) shows the three cases: a first year before the model's weather, a last year before the first, and a warm-up that leaves no year to write to the tables.
+
 A fourth case comes from the point-source files of the model: a first year after the year in which they end. The inflow file of an inlet is such a file unless another source gives the inflow of that inlet for every day of the run. Where the model of the basin upstream does so, a first year after the end of the inflow file is not refused. The model 07010206, downloaded with inflow from upstream, cannot start after 2003, because one of its inflow files ends in 2003. Set-up shows the sentence under the year boxes, and **Start the run** gives the same one: "The first year, 2004, is after the model's point-source files, which end in 2003. Choose a first year from 1980 to 2003." It is the same with or without the model 07010207 in the list **Models**, since this version does not run that model. Type a first year in the range that the sentence names. A run of 07010206 that starts in 2003 or earlier takes no inflow from 07010207 after 9 September 2003, the last day of that file.
 
 ## Not enough disk space

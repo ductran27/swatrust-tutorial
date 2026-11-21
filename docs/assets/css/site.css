@@ -140,9 +140,6 @@ body[data-md-color-scheme="slate"]::before { background-image: url("../img/groun
 /* the line that says on which version a chapter was checked */
 .checked { margin-top: 2.5em; padding-top: 0.6em; border-top: 1px solid var(--tut-line); color: var(--md-default-fg-color); font-size: 0.9em; }
 
-/* a sentence marked with the class todo: a pale yellow ground and brown text */
-.todo { background: #fbf3df; color: #855600; padding: 0 0.25em; }
-
 /* tables of files and columns read better with a little less air */
 .md-typeset table:not([class]) th, .md-typeset table:not([class]) td { padding: 0.55em 0.9em; }
 

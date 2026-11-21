@@ -3,6 +3,7 @@
 This page describes the files of a SWAT+ model that SWATrust reads and the files it writes for a run.
 
 The lines shown are those of the basin 02070002 (North Branch Potomac), in the run of [Run streamflow](run-streamflow.md): 2000 to 2015 with a warm-up of three years.
+
 ## The model folder
 
 A SWAT+ model is one folder of text files. The file `file.cio` lists them. SWAT+ reads `file.cio` in the routine `readcio_read`: a title line, then one line for each group of files. A line starts with the name of the group and then names the files of that group. The word `null` stands for a file the model does not have.

@@ -3,12 +3,14 @@
 This page takes you from the SWATrust folder to the daily flow of a first basin in a few steps.
 
 You run one basin, 02070002 (North Branch Potomac), for four years and look at the flow at its outlet. Nothing is installed, and the folder of the model is not changed.
+
 !!! note "Before you start"
-    You need the SWATrust folder for your computer, unpacked, and a web browser. The first step of the page downloads the basin, so the computer also needs a connection to the internet.[Download](download.md) says where the folder comes from, and [Install and start SWATrust](install.md) how to start it. The steps of this page were done on Linux.
+    You need the SWATrust folder for your computer, unpacked, and a web browser. The first step of the page downloads the basin, so the computer also needs a connection to the internet. [Download](download.md) says where the folder comes from, and [Install and start SWATrust](install.md) how to start it. The steps of this page were done on Linux.
 
 ## The basin of this chapter
 
 The basin is the SWAT+ model of the North Branch Potomac River, hydrologic unit 02070002, one of the HUC8 models that the page downloads. [Get a model](models.md) describes them. The page shows these counts once the model is read.
+
 | Part of the model | Count |
 |---|---|
 | Area | 3,531 km² |

@@ -143,4 +143,5 @@ With `--no-open`, the launcher prints the address and does not try to open a bro
 
 ## Next
 
-- [Quick start](quick-start.md) runs one basin, 02070002 (North Branch Potomac).- [The command line](command-line.md) lists every option of the launcher.
+- [Quick start](quick-start.md) runs one basin, 02070002 (North Branch Potomac).
+- [The command line](command-line.md) lists every option of the launcher.

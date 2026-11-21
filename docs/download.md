@@ -3,6 +3,7 @@
 This page says what to download for the tutorial and how to unpack it.
 
 You need one file for the first chapters: the SWATrust package for your computer. The launcher then downloads the basin of the first run when you ask for it.
+
 !!! note "Before you start"
     The SWATrust launcher runs on Linux, macOS and Windows. The steps of this page were done on Linux, on macOS and on Windows.
 

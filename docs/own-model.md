@@ -3,6 +3,7 @@
 This page shows how to run a SWAT+ model that you built yourself, and what SWATrust does with its folder.
 
 This page uses a copy of the basin 02070002 (North Branch Potomac). The copy lies in the folder `~/SWATrust/models/my_basin`, and its file `time.sim` runs from 2005 to 2014. It stands in for your own model.
+
 ## What counts as a model folder
 
 A model folder is a folder that holds the file `file.cio` and the input files that it names. It is often named `TxtInOut`.
