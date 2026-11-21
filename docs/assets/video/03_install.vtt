@@ -1,0 +1,107 @@
+WEBVTT
+
+00:00:00.250 --> 00:00:04.780
+This video shows how to start SWATrust and
+stop it, and where it keeps its runs.
+
+00:00:04.980 --> 00:00:08.452
+The launcher is a page in the web browser
+of your computer,
+
+00:00:08.452 --> 00:00:12.690
+on which you choose models, run them, look
+at the results and calibrate.
+
+00:00:12.890 --> 00:00:15.630
+It runs on Windows, macOS and Linux.
+
+00:00:15.830 --> 00:00:18.020
+This tutorial is written for Linux.
+
+00:00:18.520 --> 00:00:20.530
+SWATrust needs nothing installed.
+
+00:00:20.730 --> 00:00:23.720
+The launcher, the engine and the maps are
+in its folder.
+
+00:00:24.220 --> 00:00:28.230
+The chapter Download says where the
+package comes from and how to unpack it.
+
+00:00:28.430 --> 00:00:32.050
+The unpacked folder holds the launcher,
+the engine and the maps.
+
+00:00:32.250 --> 00:00:34.640
+SWATrust does not write into this folder.
+
+00:00:35.141 --> 00:00:38.121
+Open a terminal and go to the SWATrust
+folder.
+
+00:00:38.321 --> 00:00:39.441
+Start the launcher.
+
+00:00:39.941 --> 00:00:41.561
+Read what the launcher prints.
+
+00:00:41.761 --> 00:00:46.351
+The line runs in gives the runs folder,
+the one place where SWATrust writes.
+
+00:00:46.551 --> 00:00:49.161
+The line open gives the address of the
+page.
+
+00:00:49.661 --> 00:00:54.561
+The part after ?t= is a key, and SWATrust
+makes a new one at each start.
+
+00:00:54.761 --> 00:00:57.608
+A page opened without the key shows only a
+short
+
+00:00:57.608 --> 00:01:00.692
+text that asks for the address the
+launcher printed,
+
+00:01:00.692 --> 00:01:03.301
+so copy the whole address into your
+browser.
+
+00:01:03.801 --> 00:01:05.961
+Keep the terminal open while you work.
+
+00:01:06.161 --> 00:01:08.331
+The first start makes the runs folder,
+
+00:01:08.331 --> 00:01:11.071
+and the page then shows an empty list of
+models.
+
+00:01:11.572 --> 00:01:13.342
+Press Ctrl-C in the terminal.
+
+00:01:13.542 --> 00:01:15.382
+Your runs stay in the runs folder.
+
+00:01:15.882 --> 00:01:18.532
+SWATrust keeps its runs in its runs
+folder.
+
+00:01:18.732 --> 00:01:22.337
+To keep the runs somewhere else, such as
+on a larger disk,
+
+00:01:22.337 --> 00:01:25.072
+start the launcher with --runs and a
+folder.
+
+00:01:25.572 --> 00:01:30.259
+The next chapter, Quick start, downloads
+one basin,
+
+00:01:30.259 --> 00:01:34.302
+02070002, North Branch Potomac, and runs
+it.

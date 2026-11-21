@@ -1,0 +1,8 @@
+{#- The name beside the symbol, in the bar at the top and at the head of the list of chapters: the word
+    "SWATrust" alone, in its two colors (site.css). The site's full name, "SWATrust tutorial", stays the
+    title of the browser's tab and the heading of the first page. -#}
+{%- if config.site_name.startswith("SWATrust") -%}
+<span class="tut-swat">SWAT</span><span class="tut-rust">rust</span>
+{%- else -%}
+{{ config.site_name }}
+{%- endif -%}

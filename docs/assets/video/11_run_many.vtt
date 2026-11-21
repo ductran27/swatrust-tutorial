@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:05.510
+This video shows how to run several basins
+in one go and read the table of the run.
+
+00:00:06.010 --> 00:00:09.532
+This video runs five basins together:
+
+00:00:09.532 --> 00:00:16.100
+the basin 02070002, North Branch Potomac,
+and four small HUC8 models.
+
+00:00:16.601 --> 00:00:18.541
+In Set-up, click Clear choice.
+
+00:00:18.741 --> 00:00:20.791
+Tick each model that you want to run.
+
+00:00:20.991 --> 00:00:23.616
+The line beside the heading of the list
+says how
+
+00:00:23.616 --> 00:00:26.131
+many models are found and how many are
+chosen.
+
+00:00:33.224 --> 00:00:34.604
+Click Continue to Run.
+
+00:00:37.797 --> 00:00:41.339
+With several models chosen, the Run page
+runs them together,
+
+00:00:41.339 --> 00:00:45.707
+and the line beside its heading says how
+many basins are chosen in Set-up.
+
+00:00:46.213 --> 00:00:50.693
+Each basin runs with the years, warm-up
+and tables set for it in Set-up.
+
+00:00:51.193 --> 00:00:55.473
+The table lists each basin with its years,
+its warm-up and the word ready.
+
+00:00:55.979 --> 00:01:00.059
+Checks before the run has one line for
+each thing that SWATrust checked.
+
+00:01:00.560 --> 00:01:02.460
+The block Threads has two boxes.
+
+00:01:02.660 --> 00:01:06.320
+Basins at once sets how many basins run at
+the same time.
+
+00:01:06.520 --> 00:01:09.118
+Threads in each basin sets the number of
+
+00:01:09.118 --> 00:01:12.170
+threads that the engine uses inside each
+basin.
+
+00:01:12.679 --> 00:01:15.039
+The number of threads is a setting of the
+run.
+
+00:01:15.239 --> 00:01:16.979
+It changes no input file.
+
+00:01:17.179 --> 00:01:18.999
+Both boxes may stay empty.
+
+00:01:19.499 --> 00:01:20.679
+Click Start the run.
+
+00:01:22.487 --> 00:01:25.407
+The button Stop all now stands where the
+start button stood.
+
+00:01:25.607 --> 00:01:28.567
+Watch the lines under Basin, progress and
+threads.
+
+00:01:28.767 --> 00:01:33.457
+Each basin has a line with its state:
+Running, and then Finished, with its years.
+
+00:01:33.981 --> 00:01:37.451
+The runs take a while, and the video goes
+on when they have ended.
+
+00:01:40.657 --> 00:01:42.495
+When every basin has finished,
+
+00:01:42.495 --> 00:01:46.477
+the page shows the table of the run, with
+one row for each basin.
+
+00:01:46.984 --> 00:01:48.424
+Click the row of a basin.
+
+00:01:48.624 --> 00:01:51.700
+Run details under the table then shows
+that basin:
+
+00:01:51.700 --> 00:01:54.714
+its number of threads, its years and its
+warm-up.
+
+00:01:55.216 --> 00:01:58.446
+SWATrust writes the table of the run to
+the
+
+00:01:58.446 --> 00:02:01.526
+file basins.csv in the folder of the run.
+
+00:02:01.726 --> 00:02:05.166
+Above the table stands the button Save the
+table (CSV).
+
+00:02:05.667 --> 00:02:09.427
+Click Results in a row to open that basin
+in the Results view.
+
+00:02:09.627 --> 00:02:12.537
+There, the box Basin chooses the basin to
+show.
+
+00:02:13.039 --> 00:02:17.359
+The next chapter, Calibrate and validate,
+fits a basin to measured flow.

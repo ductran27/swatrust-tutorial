@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:02.806
+This video shows where a run writes the
+
+00:00:02.806 --> 00:00:05.520
+nitrogen and the phosphorus that leave the
+land.
+
+00:00:06.020 --> 00:00:10.947
+The run of this video is the run of Run
+streamflow:
+
+00:00:10.947 --> 00:00:17.130
+the basin 02070002, 2000 to 2015, with a
+warm-up of three years.
+
+00:00:17.330 --> 00:00:19.580
+The page draws no chart of nutrients,
+
+00:00:19.580 --> 00:00:22.680
+so this chapter reads the tables of the
+run folder.
+
+00:00:23.182 --> 00:00:27.616
+The run of Run streamflow already wrote
+the tables of this chapter by month,
+
+00:00:27.616 --> 00:00:29.542
+by year and for the average year.
+
+00:00:30.042 --> 00:00:31.411
+The row Entire basin,
+
+00:00:31.411 --> 00:00:35.519
+Sediment and nutrients gives the nutrients
+that leave the land,
+
+00:00:35.519 --> 00:00:38.062
+as the mean over the land of the basin.
+
+00:00:38.564 --> 00:00:43.514
+The row HRUs, Sediment and nutrients gives
+the same for each HRU.
+
+00:00:44.016 --> 00:00:48.038
+The row Entire basin, Nutrient balance
+gives what the land gains
+
+00:00:48.038 --> 00:00:50.866
+and what moves between the pools of the
+soil.
+
+00:00:51.368 --> 00:00:54.482
+Every value of these tables is an amount
+
+00:00:54.482 --> 00:00:57.908
+for one ha of land in the step of the
+table:
+
+00:00:57.908 --> 00:01:01.178
+kg of nitrogen or kg of phosphorus per ha.
+
+00:01:01.678 --> 00:01:04.038
+In Results, click Open output folder.
+
+00:01:08.633 --> 00:01:11.813
+The output folder of the run now holds
+these tables.
+
+00:01:12.330 --> 00:01:15.970
+The chapter prints the losses and the
+gains of each printed year.

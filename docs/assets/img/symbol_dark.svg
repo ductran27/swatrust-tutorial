@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<mask id="sdm" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+<rect width="64" height="64" fill="#fff"/>
+<path d="M0 30H64" stroke="#000" stroke-width="3.4"/>
+<path d="M27 4C27 16 44 18 42 31C40 44 22 41 24 53C24.6 56 26 58 28 60" fill="none" stroke="#000" stroke-width="12.5" stroke-linecap="round"/>
+</mask>
+<g mask="url(#sdm)">
+<clipPath id="sdc">
+<rect x="4" y="4" width="56" height="56" rx="13"/>
+</clipPath>
+<clipPath id="sdn">
+<rect x="0" y="0" width="64" height="30"/>
+</clipPath>
+<clipPath id="sds">
+<rect x="0" y="30" width="64" height="34"/>
+</clipPath>
+<g clip-path="url(#sdc)">
+<path d="M0 0H64V64H0Z" fill="#3E7A4A"/>
+<path clip-path="url(#sdn)" d="M0 0H64V64H0Z" fill="#9DBF7E"/>
+<path clip-path="url(#sdn)" d="M27 -1V4C27 16 44 18 42 31C40 44 22 41 24 53C24.6 56 26 58 28 60V65H65V-1Z" fill="#3E7A4A"/>
+<path clip-path="url(#sds)" d="M27 -1V4C27 16 44 18 42 31C40 44 22 41 24 53C24.6 56 26 58 28 60V65H65V-1Z" fill="#9DBF7E"/>
+</g>
+</g>
+<g clip-path="url(#sdc)">
+<path d="M27 4C27 16 44 18 42 31C40 44 22 41 24 53C24.6 56 26 58 28 60" fill="none" stroke="#5395E1" stroke-width="6.5" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,185 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:03.825
+This video sets the period of a run,
+starts the run,
+
+00:00:03.825 --> 00:00:07.980
+and reads the daily flow at the basin
+outlet and the water balance.
+
+00:00:08.480 --> 00:00:09.910
+The page is on Set-up.
+
+00:00:10.110 --> 00:00:16.800
+The basin 02070002 North Branch Potomac is
+in the list Models.
+
+00:00:17.302 --> 00:00:23.172
+The model comes with the years 1997 to
+2025 and a warm-up of 3 years.
+
+00:00:23.672 --> 00:00:26.912
+In First year, type 1970 and press Enter.
+
+00:00:27.413 --> 00:00:32.323
+The page refuses the year, because the
+model's weather starts in 1981.
+
+00:00:32.825 --> 00:00:35.865
+Now type 2000 in First year and press
+Enter.
+
+00:00:36.365 --> 00:00:39.315
+In Last year, type 2015 and press Enter.
+
+00:00:39.815 --> 00:00:41.265
+In Warm-up, leave 3.
+
+00:00:42.165 --> 00:00:45.555
+The run now covers 16 years, the first 3
+as warm-up.
+
+00:00:45.755 --> 00:00:48.955
+The tables hold 2003 to 2015.
+
+00:00:49.456 --> 00:00:51.376
+The first 3 years are the warm-up.
+
+00:00:51.576 --> 00:00:56.400
+They are simulated but not written to the
+tables, so that the soil water, the snow,
+
+00:00:56.400 --> 00:00:58.957
+the groundwater and the plant cover can
+move
+
+00:00:58.957 --> 00:01:01.456
+away from the values the model starts
+with.
+
+00:01:01.956 --> 00:01:05.807
+Under Entire basin, Water balance carries
+its four ticks:
+
+00:01:05.807 --> 00:01:07.766
+day, month, year and average.
+
+00:01:08.268 --> 00:01:10.291
+SWATrust adds the tick under Day,
+
+00:01:10.291 --> 00:01:14.888
+because the Results view draws from that
+table, and says so under the list.
+
+00:01:15.390 --> 00:01:18.700
+Leave the other ticks as they are, and
+click Continue to Run.
+
+00:01:20.613 --> 00:01:24.893
+The table lists each basin with its years,
+its warm-up and the word ready.
+
+00:01:25.093 --> 00:01:29.173
+Checks before the run has one line for
+each thing that SWATrust checked.
+
+00:01:29.675 --> 00:01:30.855
+Click Start the run.
+
+00:01:33.525 --> 00:01:38.135
+The line of the basin reads Running and
+says what the engine has done so far.
+
+00:01:57.663 --> 00:01:59.283
+The state now reads Finished.
+
+00:02:02.223 --> 00:02:03.453
+Click See the results.
+
+00:02:08.551 --> 00:02:11.311
+The Results view opens on the basin you
+just ran.
+
+00:02:11.511 --> 00:02:16.191
+The box Basin at the top of the left
+column lists the basins that have results.
+
+00:02:16.692 --> 00:02:21.624
+In the middle column, the chart under the
+basin draws the simulated
+
+00:02:21.624 --> 00:02:27.292
+flow at the basin outlet in m³/s from
+2003, the first year after the warm-up.
+
+00:02:27.793 --> 00:02:31.753
+To look at a part of the period, click
+Zoom and draw a box on the chart.
+
+00:02:38.044 --> 00:02:40.124
+Zoom out shows the whole period again.
+
+00:02:41.807 --> 00:02:45.507
+Under the chart, a small table gives five
+figures of the flow.
+
+00:02:45.707 --> 00:02:51.310
+The low flow is passed on 95 days in 100
+and the high flow on 5 days in 100,
+
+00:02:51.310 --> 00:02:54.037
+over the years written to the tables.
+
+00:02:54.537 --> 00:03:00.216
+On the left, Water balance, average year
+shows the parts of the water balance of the
+
+00:03:00.216 --> 00:03:04.947
+land for the average of the years written
+to the tables, 2003 to 2015.
+
+00:03:05.147 --> 00:03:08.187
+Each part is given in mm over the land
+area of
+
+00:03:08.187 --> 00:03:11.227
+the basin and as a share of the
+precipitation.
+
+00:03:11.728 --> 00:03:13.478
+The last row, Outlet flow,
+
+00:03:13.478 --> 00:03:17.988
+is the mean flow at the basin outlet as a
+depth over the same land.
+
+00:03:18.489 --> 00:03:22.015
+The i beside the heading says that not
+every part is listed,
+
+00:03:22.015 --> 00:03:23.719
+so the parts need not add up.
+
+00:03:24.219 --> 00:03:28.467
+Output checks, above it, gives a few of
+the same values as shares:
+
+00:03:28.467 --> 00:03:32.908
+evapotranspiration and surface runoff as
+shares of the precipitation,
+
+00:03:32.908 --> 00:03:35.547
+and baseflow as a share of the water that
+
+00:03:35.547 --> 00:03:38.379
+the land and the aquifers give the
+channels.
+
+00:03:38.881 --> 00:03:42.071
+The values of each year are in a file of
+the run folder.
+
+00:03:42.271 --> 00:03:45.581
+The next chapter, Find the outputs, goes
+through that folder.

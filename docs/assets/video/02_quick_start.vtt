@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:06.081
+This video downloads one basin, 02070002,
+North Branch Potomac,
+
+00:00:06.081 --> 00:00:11.040
+runs it for four years, and shows the flow
+at its outlet.
+
+00:00:11.540 --> 00:00:16.290
+Open a terminal, go to the SWATrust
+folder, and type ./swatrust.
+
+00:00:16.490 --> 00:00:20.560
+SWATrust prints the folder of its runs and
+the address of its page.
+
+00:00:20.760 --> 00:00:22.620
+Open the address in your browser.
+
+00:00:23.120 --> 00:00:24.770
+The page opens on Set-up.
+
+00:00:24.970 --> 00:00:26.660
+The list of models is empty.
+
+00:00:27.161 --> 00:00:33.051
+Under the map, type 02070002 in the box
+Code or name.
+
+00:00:33.251 --> 00:00:35.251
+The page marks the row of the basin.
+
+00:00:35.751 --> 00:00:38.201
+Leave Basin alone, and click Download.
+
+00:00:44.937 --> 00:00:53.327
+The basin is in the list Models, with its
+895 HRUs and its years, 1997 to 2025.
+
+00:00:53.829 --> 00:00:56.829
+On the map under the list, the basin is
+drawn in yellow.
+
+00:00:57.329 --> 00:00:59.158
+To see the relief of the basin,
+
+00:00:59.158 --> 00:01:03.699
+with its streams and a red dot at its
+outlet, click This basin above the map.
+
+00:01:06.892 --> 00:01:09.712
+In First year, type 2010 and press Enter.
+
+00:01:11.378 --> 00:01:14.348
+In Last year, type 2013 and press Enter.
+
+00:01:14.848 --> 00:01:17.128
+In Warm-up, type 1 and press Enter.
+
+00:01:17.753 --> 00:01:20.773
+The run now covers 4 years, the first as
+warm-up.
+
+00:01:20.973 --> 00:01:24.453
+The warm-up year is simulated, but not
+written to the tables.
+
+00:01:24.954 --> 00:01:28.504
+Leave Output tables as it is, and click
+Continue to Run.
+
+00:01:29.893 --> 00:01:31.263
+The Run view opens.
+
+00:01:31.463 --> 00:01:35.543
+Checks before the run has one line for
+each thing that SWATrust checked.
+
+00:01:36.045 --> 00:01:37.225
+Click Start the run.
+
+00:01:39.881 --> 00:01:43.371
+The run table shows the basin as Running,
+and then as Finished.
+
+00:01:49.162 --> 00:01:50.392
+Click See the results.
+
+00:01:55.069 --> 00:01:57.689
+The Results view shows the run in three
+columns.
+
+00:01:58.189 --> 00:02:02.683
+On the left, Output checks and Water
+balance, average year sum the run up,
+
+00:02:02.683 --> 00:02:07.419
+and Output folders has the button Open
+output folder for the basin of the run.
+
+00:02:07.921 --> 00:02:11.320
+In the middle, the basin is drawn as a
+block on its relief,
+
+00:02:11.320 --> 00:02:14.891
+with each subbasin in the color of its
+value on the day shown.
+
+00:02:15.091 --> 00:02:20.277
+Under it, a chart draws the daily flow at
+the basin outlet in m³/s,
+
+00:02:20.277 --> 00:02:25.231
+from 2011, the first year after the
+warm-up, to the end of 2013.
+
+00:02:25.732 --> 00:02:28.209
+On the right are the counts of the basin,
+
+00:02:28.209 --> 00:02:31.712
+its values on the day shown, and a table
+of the subbasins.
+
+00:02:32.213 --> 00:02:34.773
+Read the table Water balance, average
+year.
+
+00:02:34.973 --> 00:02:37.812
+It gives the parts of the water balance of
+the
+
+00:02:37.812 --> 00:02:40.713
+land in mm and as a share of the
+precipitation.
+
+00:02:41.213 --> 00:02:42.053
+Click Play.
+
+00:02:44.685 --> 00:02:46.564
+The date moves through the run,
+
+00:02:46.564 --> 00:02:50.685
+and the subbasins change color with the
+value chosen under Color by.
+
+00:02:51.193 --> 00:02:52.513
+Click Pause to stop.
+
+00:02:54.100 --> 00:02:56.360
+Click a row of the table of subbasins.
+
+00:02:57.452 --> 00:03:00.192
+The chart now draws the flow from that
+subbasin,
+
+00:03:00.192 --> 00:03:02.362
+and the right column gives its counts.
+
+00:03:02.864 --> 00:03:04.754
+Click Entire basin to go back.
+
+00:03:06.451 --> 00:03:10.071
+To stop SWATrust, press Ctrl-C in the
+terminal window.

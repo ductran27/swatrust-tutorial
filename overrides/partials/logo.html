@@ -1,0 +1,9 @@
+{#- The SWATrust symbol in its two forms, one for each color scheme: the form for a light ground
+    (theme.logo in mkdocs.yml) and the form for a dark ground (extra.logo_dark). site.css shows the
+    one that fits the scheme, so the lines cut into the symbol always show the ground it was drawn for. -#}
+{% if config.theme.logo %}
+  <img class="tut-mark tut-mark--light" src="{{ config.theme.logo | url }}" alt="logo">
+  {% if config.extra.logo_dark %}
+    <img class="tut-mark tut-mark--dark" src="{{ config.extra.logo_dark | url }}" alt="logo">
+  {% endif %}
+{% endif %}

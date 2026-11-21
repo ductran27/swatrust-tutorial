@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:04.356
+This video shows where SWATrust writes the
+output tables of a run,
+
+00:00:04.356 --> 00:00:05.950
+and how the files are named.
+
+00:00:06.450 --> 00:00:11.377
+The run of this video is the run of Run
+streamflow:
+
+00:00:11.377 --> 00:00:17.560
+the basin 02070002, 2000 to 2015, with a
+warm-up of three years.
+
+00:00:18.062 --> 00:00:19.862
+Click Results in the left column.
+
+00:00:20.062 --> 00:00:22.232
+In the box Basin, pick the basin.
+
+00:00:23.228 --> 00:00:26.288
+Look at Output folders, at the foot of the
+left column.
+
+00:00:26.488 --> 00:00:28.338
+It has one row for each basin,
+
+00:00:28.338 --> 00:00:32.098
+with the name of the basin and the button
+Open output folder.
+
+00:00:32.600 --> 00:00:34.270
+Click Open output folder.
+
+00:00:37.155 --> 00:00:39.816
+The folder out holds one text file for
+each
+
+00:00:39.816 --> 00:00:42.725
+output table and each step that the run
+writes.
+
+00:00:42.925 --> 00:00:44.985
+The first part of the name is the table.
+
+00:00:45.185 --> 00:00:46.823
+The last part is the step:
+
+00:00:46.823 --> 00:00:50.665
+day, mon for month, yr for year, and aa
+for the average year.
+
+00:00:51.165 --> 00:00:54.365
+Every run has a folder of its own in the
+runs folder.
+
+00:00:54.565 --> 00:00:57.755
+The name of the folder is the date and the
+time of the start.
+
+00:00:58.256 --> 00:01:00.546
+The page draws from some of these files.
+
+00:01:00.746 --> 00:01:05.416
+It does not show a table as a table: you
+open the files with your own programs.
+
+00:01:05.917 --> 00:01:09.987
+The next chapter, Read the results, reads
+the tables of the water balance.

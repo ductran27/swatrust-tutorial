@@ -1,0 +1,305 @@
+WEBVTT
+
+00:00:03.000 --> 00:00:05.240
+Rain and snow fall on a river basin.
+
+00:00:05.440 --> 00:00:07.100
+Part of it runs off the land.
+
+00:00:07.300 --> 00:00:08.810
+Part soaks into the soil.
+
+00:00:09.010 --> 00:00:10.540
+Part returns to the air.
+
+00:00:10.740 --> 00:00:13.830
+And part takes the slow way to
+the river, through the ground.
+
+00:00:14.830 --> 00:00:17.732
+A watershed model keeps
+account of all this water,
+
+00:00:17.732 --> 00:00:18.520
+day by day.
+
+00:00:20.370 --> 00:00:22.090
+SWAT+ is such a model.
+
+00:00:22.290 --> 00:00:27.428
+It is the restructured version of SWAT,
+the Soil and Water Assessment Tool,
+
+00:00:27.428 --> 00:00:33.183
+and it is developed by the USDA Agricultural
+Research Service and Texas A&M AgriLife
+
+00:00:33.183 --> 00:00:33.950
+Research.
+
+00:00:34.150 --> 00:00:37.427
+People use it to ask what
+a change does to a basin:
+
+00:00:37.427 --> 00:00:40.898
+another crop, another way of
+tillage, a new reservoir,
+
+00:00:40.898 --> 00:00:42.140
+a warmer climate.
+
+00:00:42.340 --> 00:00:47.275
+The answers include streamflow, sediment
+and nutrients for every day of many years,
+
+00:00:47.275 --> 00:00:49.090
+and the yield of every crop.
+
+00:00:50.140 --> 00:00:53.190
+SWAT+ does not treat
+the basin as one piece.
+
+00:00:53.390 --> 00:00:55.930
+It divides it into objects
+and connects them.
+
+00:00:56.930 --> 00:00:58.280
+The land comes first.
+
+00:00:58.480 --> 00:01:02.060
+Inside each subbasin, a
+hydrologic response unit,
+
+00:01:02.060 --> 00:01:05.640
+or HRU, is a share of the
+area with one land use,
+
+00:01:05.640 --> 00:01:07.470
+one soil and one slope.
+
+00:01:07.670 --> 00:01:10.740
+This is where the water balance
+of the land is computed.
+
+00:01:10.940 --> 00:01:14.800
+Routing units collect the water
+of their HRUs and pass it on.
+
+00:01:15.000 --> 00:01:16.730
+Channels carry it downstream.
+
+00:01:16.930 --> 00:01:20.540
+Aquifers lie below, and feed
+the channels between storms.
+
+00:01:20.740 --> 00:01:23.210
+Reservoirs and ponds hold water back.
+
+00:01:23.410 --> 00:01:28.030
+Point sources add water from a file,
+such as what a town or a plant releases.
+
+00:01:28.230 --> 00:01:31.250
+What the channels carry leaves
+the basin at the outlet.
+
+00:01:32.250 --> 00:01:35.910
+The model of one basin can hold
+thousands of these objects.
+
+00:01:39.360 --> 00:01:41.810
+Now follow the water through one HRU.
+
+00:01:44.410 --> 00:01:45.660
+The soil is a store.
+
+00:01:45.860 --> 00:01:50.134
+Each day, SWAT+ adds the
+precipitation, as rain or as snowmelt,
+
+00:01:50.134 --> 00:01:53.526
+and takes away surface
+runoff, evapotranspiration,
+
+00:01:53.526 --> 00:01:56.050
+and the water that seeps out below.
+
+00:01:56.250 --> 00:01:59.090
+The aquifer returns part of
+that water to the channel.
+
+00:01:59.290 --> 00:02:02.489
+That is the return flow,
+the last term on screen;
+
+00:02:02.489 --> 00:02:07.340
+in SWAT+ the aquifer computes it, and
+lateral flow also leaves the soil.
+
+00:02:08.340 --> 00:02:09.580
+How much runs off?
+
+00:02:09.780 --> 00:02:14.133
+The curve number method answers from the
+water that reaches the soil that day and
+
+00:02:14.133 --> 00:02:16.110
+from one number, the curve number.
+
+00:02:16.310 --> 00:02:20.920
+Land use and soil set it, and it changes
+each day with the water in the soil.
+
+00:02:21.920 --> 00:02:23.370
+The air takes water back.
+
+00:02:23.570 --> 00:02:26.923
+SWAT+ first computes the
+potential evapotranspiration,
+
+00:02:26.923 --> 00:02:31.207
+here from temperature and the radiation
+at the top of the atmosphere,
+
+00:02:31.207 --> 00:02:35.020
+and then what the canopy, the
+plants and the soil can give.
+
+00:02:36.020 --> 00:02:38.610
+Soil water above field capacity moves on.
+
+00:02:38.810 --> 00:02:43.774
+Some of it percolates down, layer by layer,
+at a pace set by the conductivity of the
+
+00:02:43.774 --> 00:02:44.220
+soil.
+
+00:02:44.420 --> 00:02:47.487
+On a slope, some of it moves
+sideways, as lateral flow,
+
+00:02:47.487 --> 00:02:50.370
+and goes through the routing
+unit to the channel.
+
+00:02:51.370 --> 00:02:54.515
+What leaves the bottom of the
+soil recharges the aquifer,
+
+00:02:54.515 --> 00:02:58.764
+which releases part of it slowly to the
+channel while its water table is high
+
+00:02:58.764 --> 00:02:59.300
+enough.
+
+00:02:59.500 --> 00:03:02.240
+This flow keeps a river
+running through dry weeks.
+
+00:03:04.890 --> 00:03:08.330
+In the channel, the water of
+all the objects upstream meets.
+
+00:03:09.330 --> 00:03:14.076
+SWAT+ routes it from reach to reach: a
+storage coefficient sets how much of the
+
+00:03:14.076 --> 00:03:17.110
+water in a reach leaves
+it within the time step.
+
+00:03:18.110 --> 00:03:19.740
+Runoff also carries soil.
+
+00:03:19.940 --> 00:03:23.344
+The sediment yield of an HRU
+follows from the runoff,
+
+00:03:23.344 --> 00:03:27.540
+its peak rate, and factors for
+soil, cover, practice and slope.
+
+00:03:27.740 --> 00:03:31.010
+This is the Modified
+Universal Soil Loss Equation.
+
+00:03:32.010 --> 00:03:37.051
+Nitrogen and phosphorus travel the same
+paths, dissolved in the water or bound to
+
+00:03:37.051 --> 00:03:38.010
+the sediment.
+
+00:03:40.660 --> 00:03:41.910
+What does a model need?
+
+00:03:42.910 --> 00:03:46.284
+Weather for every day:
+precipitation and temperature,
+
+00:03:46.284 --> 00:03:50.380
+and solar radiation, humidity
+and wind, measured or generated.
+
+00:03:50.580 --> 00:03:52.070
+Soils, layer by layer.
+
+00:03:52.270 --> 00:03:55.393
+Land use, and how the land
+is managed: planting,
+
+00:03:55.393 --> 00:03:57.430
+fertilizer, tillage, harvest.
+
+00:03:57.630 --> 00:03:59.560
+And the objects with their connections.
+
+00:03:59.760 --> 00:04:04.220
+All of it is plain text in one model
+folder, and one file lists the others.
+
+00:04:05.270 --> 00:04:09.252
+What comes out are tables: for
+the whole basin, for every HRU,
+
+00:04:09.252 --> 00:04:13.320
+for channels, aquifers and
+reservoirs, by day, month or year.
+
+00:04:14.320 --> 00:04:17.290
+They hold the water balance,
+with the water in the soil.
+
+00:04:17.490 --> 00:04:20.870
+They hold the growth of the plants
+and the yield of every crop.
+
+00:04:23.470 --> 00:04:26.550
+They hold the flow in every
+channel, and the sediment,
+
+00:04:26.550 --> 00:04:29.210
+nitrogen and phosphorus
+that leave the land.
+
+00:04:29.410 --> 00:04:32.750
+And they hold what aquifers and
+reservoirs store and release.
+
+00:04:33.750 --> 00:04:37.600
+These plots show a few of their
+columns; each table holds many more.
+
+00:04:39.450 --> 00:04:42.379
+SWATrust is a port of SWAT+
+to the Rust language,
+
+00:04:42.379 --> 00:04:45.040
+with a launcher that runs in your browser.
+
+00:04:45.240 --> 00:04:47.860
+The chapters of this
+tutorial show how to use it.
+

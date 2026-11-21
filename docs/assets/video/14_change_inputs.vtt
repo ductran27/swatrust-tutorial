@@ -1,0 +1,106 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:05.360
+This video shows what SWATrust lets you set
+for a run, and where each setting goes.
+
+00:00:05.860 --> 00:00:08.140
+SWATrust runs a copy of the model.
+
+00:00:08.340 --> 00:00:12.560
+It writes your settings into the copy and
+does not change the folder of the model.
+
+00:00:13.061 --> 00:00:15.966
+In Set-up, click Clear choice and tick the
+model,
+
+00:00:15.966 --> 00:00:18.101
+so that it is the only model chosen.
+
+00:00:18.301 --> 00:00:20.251
+Type the first year and press Enter.
+
+00:00:20.451 --> 00:00:22.011
+Do the same for the last year.
+
+00:00:32.330 --> 00:00:35.180
+Type the number of warm-up years and press
+Enter.
+
+00:00:35.681 --> 00:00:38.584
+The line under the three boxes says how
+many years
+
+00:00:38.584 --> 00:00:41.371
+run and for which years the model holds
+weather.
+
+00:00:41.571 --> 00:00:45.151
+The warm-up years are simulated, but not
+written to the tables.
+
+00:00:45.652 --> 00:00:49.466
+A period that the model cannot run is
+refused in the same line,
+
+00:00:49.466 --> 00:00:51.282
+with the years to choose from.
+
+00:00:55.357 --> 00:01:01.113
+The column Output tables has one row for
+each table and one box for each time step:
+
+00:01:01.113 --> 00:01:03.957
+Day, Mon, Year and Avg, the average year.
+
+00:01:04.459 --> 00:01:07.049
+Tick a box to write that table at that
+time step.
+
+00:01:08.649 --> 00:01:10.589
+Clear a box to leave the table out.
+
+00:01:12.189 --> 00:01:15.259
+The page opens with the ticks of the
+model's own tables.
+
+00:01:15.459 --> 00:01:18.439
+SWATrust adds one tick and says so under
+the list.
+
+00:01:18.639 --> 00:01:22.018
+The tick is the daily water balance of the
+entire basin,
+
+00:01:22.018 --> 00:01:24.189
+from which Results draws its charts.
+
+00:01:24.389 --> 00:01:26.889
+Some rows have boxes that cannot be
+ticked.
+
+00:01:27.391 --> 00:01:28.943
+Under Calibrated values,
+
+00:01:28.943 --> 00:01:33.211
+the page names the file of calibrated
+values that the run applies.
+
+00:01:33.411 --> 00:01:35.551
+To run with another file, click Choose.
+
+00:01:35.751 --> 00:01:39.441
+Calibrate and validate writes such a file
+of fitted values.
+
+00:01:39.943 --> 00:01:41.474
+To change any other input,
+
+00:01:41.474 --> 00:01:46.067
+change it in a copy of the model with the
+tools that you built the model with,
+
+00:01:46.067 --> 00:01:48.953
+and add the copy as Run your own model
+describes.

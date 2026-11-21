@@ -1,0 +1,262 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:02.978
+This video shows how to fit the parameters
+
+00:00:02.978 --> 00:00:05.583
+of a model to the flow measured at its
+outlet,
+
+00:00:05.583 --> 00:00:09.490
+and how to check the fitted model on years
+that it was not fitted to.
+
+00:00:09.990 --> 00:00:11.524
+You need a model in Set-up,
+
+00:00:11.524 --> 00:00:15.500
+and the flow measured at a point of the
+model, one value for each day.
+
+00:00:15.700 --> 00:00:20.510
+This video uses the basin 01020003.
+
+00:00:21.012 --> 00:00:26.115
+In Set-up, click Clear choice and tick the
+model 01020003,
+
+00:00:26.115 --> 00:00:29.282
+so that it is the only model chosen.
+
+00:00:31.015 --> 00:00:33.725
+Click Calibration, the fourth of the four
+views.
+
+00:00:33.925 --> 00:00:35.695
+The box Model names the model.
+
+00:00:36.195 --> 00:00:38.395
+In the bar Method, leave DDS.
+
+00:00:38.896 --> 00:00:42.224
+Under Measured data, the page names the
+gauge of the model,
+
+00:00:42.224 --> 00:00:44.706
+and has the button Download under that
+line.
+
+00:00:44.906 --> 00:00:49.456
+Until the page has a measured flow, it reads
+Choose the measured flow under Checks.
+
+00:00:50.262 --> 00:00:51.292
+Click Download.
+
+00:00:51.492 --> 00:00:56.664
+Download asks USGS for the days of this
+gauge from 1997 to 2025,
+
+00:00:56.664 --> 00:01:01.512
+writes them into the folder obs of the
+model and reads them.
+
+00:01:03.262 --> 00:01:08.142
+The page compares the measured flow with the
+daily flow of one channel of the model.
+
+00:01:08.342 --> 00:01:10.472
+The menu under Where names that channel.
+
+00:01:10.973 --> 00:01:15.093
+A calibration divides the years of the
+model into three periods.
+
+00:01:15.293 --> 00:01:19.326
+The search scores each set of parameter
+values on the calibration years,
+
+00:01:19.326 --> 00:01:21.623
+and it does not use the validation years.
+
+00:01:22.123 --> 00:01:25.773
+This video uses shorter periods so that
+the search stays small.
+
+00:01:25.973 --> 00:01:28.873
+Under Years, type the years of the three
+periods.
+
+00:01:42.232 --> 00:01:45.882
+The list Parameters holds the parameters
+that the search can change.
+
+00:01:46.082 --> 00:01:50.792
+Each parameter has a lowest and a highest
+value, and the search stays between them.
+
+00:01:51.293 --> 00:01:53.593
+This video leaves the list as it opens.
+
+00:01:54.093 --> 00:01:57.145
+The Calibration page calls one run of the
+model
+
+00:01:57.145 --> 00:02:00.133
+with one set of parameter values a
+simulation.
+
+00:02:00.333 --> 00:02:02.093
+The search works in iterations.
+
+00:02:02.293 --> 00:02:05.253
+The first simulation uses the initial
+parameters,
+
+00:02:05.253 --> 00:02:08.153
+the values that the model has before the
+search.
+
+00:02:08.353 --> 00:02:11.121
+Each iteration after it tries a number of
+new
+
+00:02:11.121 --> 00:02:14.073
+sets of values around the best set found
+so far.
+
+00:02:14.573 --> 00:02:18.320
+Two boxes under Simulations set the size
+of the search:
+
+00:02:18.320 --> 00:02:21.113
+Iterations and Simulations per iteration.
+
+00:02:21.313 --> 00:02:26.048
+This video sets Iterations to 5 and
+Simulations per iteration to 8:
+
+00:02:26.048 --> 00:02:28.593
+a small search that shows the steps.
+
+00:02:29.093 --> 00:02:31.823
+In Iterations, type 5 and press Enter.
+
+00:02:32.023 --> 00:02:35.623
+In Simulations per iteration, type 8 and
+press Enter.
+
+00:02:37.725 --> 00:02:39.275
+Click Start the calibration.
+
+00:02:40.367 --> 00:02:43.568
+Under Checks, the page reads Running;
+settings locked,
+
+00:02:43.568 --> 00:02:46.887
+and the button Stop stands in place of the
+start button.
+
+00:02:47.087 --> 00:02:48.497
+Watch the block Result.
+
+00:02:48.697 --> 00:02:51.806
+Its table has three lines, one for each
+step:
+
+00:02:51.806 --> 00:02:55.467
+Initial simulation, Iterations and Final
+simulations.
+
+00:02:55.968 --> 00:03:00.252
+Under the table, the line Best so far
+gives the value of KGE daily
+
+00:03:00.252 --> 00:03:03.432
+for the best set and the iteration that
+found it,
+
+00:03:03.432 --> 00:03:06.288
+beside its value for the initial
+simulation.
+
+00:03:06.488 --> 00:03:09.589
+The tab Progress draws one dot for each
+simulation
+
+00:03:09.589 --> 00:03:12.318
+and a line through the highest value so
+far.
+
+00:03:12.518 --> 00:03:16.908
+The box Objective function names the
+objective function of the search.
+
+00:03:17.108 --> 00:03:20.122
+As the page opens, it holds KGE daily:
+
+00:03:20.122 --> 00:03:24.168
+the KGE of the daily flow in the
+calibration years.
+
+00:03:24.670 --> 00:03:29.300
+The calibration goes on in the launcher:
+this tab may be closed and opened again.
+
+00:03:46.642 --> 00:03:49.762
+When the search has ended, the head of
+Result reads finished.
+
+00:03:50.263 --> 00:03:53.023
+The box at the top of Result reads
+Calibrated.
+
+00:03:53.223 --> 00:03:56.067
+The i of the box names the simulation and
+
+00:03:56.067 --> 00:03:59.049
+the iteration that gave the calibrated
+set,
+
+00:03:59.049 --> 00:04:02.793
+and the gain in KGE daily over the initial
+parameters.
+
+00:04:03.294 --> 00:04:07.164
+The table Statistics has a line Initial
+and a line Calibrated
+
+00:04:07.164 --> 00:04:10.654
+for the calibration years and for the
+validation years.
+
+00:04:10.854 --> 00:04:13.409
+The search did not use the validation
+years,
+
+00:04:13.409 --> 00:04:16.139
+so their statistics show how the
+calibrated set
+
+00:04:16.139 --> 00:04:18.984
+predicts flow in years that it was not
+fitted to.
+
+00:04:19.487 --> 00:04:22.870
+The chart Daily flow draws three lines:
+the measured flow,
+
+00:04:22.870 --> 00:04:27.187
+the flow with the initial parameters and
+the flow with the calibrated set.
+
+00:04:27.688 --> 00:04:30.505
+The file calibration.cal in the folder of
+
+00:04:30.505 --> 00:04:33.528
+the calibration holds the calibrated
+values.
+
+00:04:34.028 --> 00:04:38.798
+The next chapter, Uncertainty analysis,
+puts a band around the simulated flow.

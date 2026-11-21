@@ -1,0 +1,191 @@
+/* SWATrust tutorial: fonts, colors and the few blocks of its own.
+   Every file named here is part of the site; nothing is loaded from the internet. */
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../vendor/source-sans/SourceSans3VF-Upright.ttf.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../vendor/source-sans/SourceSans3VF-Italic.ttf.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("../vendor/source-code-pro/SourceCodeVF-Upright.ttf.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("../vendor/source-code-pro/SourceCodeVF-Italic.ttf.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Liberation Sans";   /* the letters of the figures */
+  src: local("Liberation Sans"), url("../vendor/liberation/LiberationSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --md-text-font: "Source Sans 3";
+  --md-code-font: "Source Code Pro";
+}
+
+/* The light scheme: white ground, dark ink, one blue. */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #12589f;
+  --md-primary-fg-color--light: #2b7bb5;
+  --md-primary-fg-color--dark: #0c4480;
+  --md-accent-fg-color: #0c4480;
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #14181c;
+  --md-typeset-a-color: #12589f;
+  --md-default-fg-color--light: var(--md-default-fg-color);   /* no grey text: rank is shown by size and weight */
+  --tut-ink: #14181c;      /* titles */
+  --tut-line: #d2d8de;     /* hairlines */
+}
+
+/* The dark scheme: the theme's dark set turned to a blue-grey, with pale blue links. Every text of it is
+   white: the running text, the two lists beside it, the titles, the bar at the top, the notes, and the
+   plain letters of code on their own ground. Rank is shown by size and weight; a link, and the page
+   the reader is on in the list of chapters, by the pale blue. */
+[data-md-color-scheme="slate"] {
+  --md-hue: 212;
+  --md-default-fg-color: #ffffff;
+  --md-typeset-color: #ffffff;
+  --md-admonition-fg-color: #ffffff;
+  --md-code-fg-color: #ffffff;
+  --md-primary-fg-color: #0d355e;
+  --md-primary-fg-color--light: #2b7bb5;
+  --md-primary-fg-color--dark: #092846;
+  --md-accent-fg-color: #a6d0f3;
+  --md-typeset-a-color: #8fc0ec;
+  --md-default-fg-color--light: var(--md-default-fg-color);
+  --tut-ink: #ffffff;
+  --tut-line: #46525e;
+}
+
+/* The ground: contour lines of an invented terrain, drawn by tools/bg_contours.py, one file for each
+   scheme. They stand at the right side of the window only and fade out towards the column of text, so
+   the text, the tables and the list of chapters stand on plain ground; the list "Table of contents" at
+   the right stands over the faded part, where a line has at most 45 % of its strength (the figure that
+   tools/bg_contours.py takes for its contrast line). The strip is as wide as that list and the free
+   margin beside it; the lines reach their full strength only in that margin.
+   A window too narrow to show that list has no lines, and a printed page has none. */
+body::before {
+  content: "";
+  position: fixed; top: 0; bottom: 0; right: 0; z-index: -1; pointer-events: none;
+  width: calc(max(0px, (100vw - 61rem) / 2) + 12.1rem);
+  background-repeat: repeat; background-position: right top; background-size: 1200px 840px;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, rgba(0, 0, 0, 0.45) 12.1rem, #000 100%);
+  mask-image: linear-gradient(to right, transparent 0, rgba(0, 0, 0, 0.45) 12.1rem, #000 100%);
+}
+body[data-md-color-scheme="default"]::before { background-image: url("../img/ground_light.svg"); }
+body[data-md-color-scheme="slate"]::before { background-image: url("../img/ground_dark.svg"); }
+@media screen and (max-width: 59.984375em) { body::before { display: none; } }
+@media print { body::before { display: none; } }
+
+/* The bar at the foot of a page, which leads to the chapter before and the chapter after: as high as its
+   text and a little more. The direction word and the title stand on one line; the strip under the bar
+   shows only when it has a line to show. */
+.md-footer__inner { padding: 0 0.2rem; }
+.md-footer__link { align-items: center; margin-top: 0.25rem; margin-bottom: 0.25rem; }
+.md-footer__button { margin: 0 0.2rem; padding: 0.15rem; }
+.md-footer__title { display: flex; align-items: baseline; font-size: 0.8rem; line-height: 1.5; margin-bottom: 0; padding: 0 0.5rem; max-width: calc(100% - 1.9rem); }
+.md-footer__link--next .md-footer__title { justify-content: flex-end; }
+.md-footer__title .md-ellipsis { flex: 0 1 auto; min-width: 0; }
+.md-footer__direction { flex: none; font-size: 0.7rem; margin-right: 0.6em; opacity: 1; }
+.md-footer-meta:not(:has(.md-copyright__highlight)):not(:has(.md-social)) { display: none; }
+/* the line of ownership in that strip: the strip's full text color, not the theme's dimmed one */
+.md-copyright, .md-copyright__highlight { color: var(--md-footer-fg-color); }
+
+.md-typeset { font-size: 0.82rem; line-height: 1.6; }
+.md-typeset h1 { color: var(--tut-ink); font-weight: 600; }
+.md-typeset h2 { font-weight: 600; }
+
+/* the one sentence under the title */
+.md-typeset h1 + p { font-size: 1.08em; }
+
+/* pictures stand on the ground of the page without a frame. A screenshot is a light picture in both
+   schemes (the program has one set of colors) and gets a small corner radius; a drawing made by the
+   site has a clear ground and takes the text color of the scheme. */
+.md-typeset figure { margin: 1.2em 0; }
+.md-typeset figure img { border: 0; border-radius: 0.3rem; }
+.md-typeset figure > svg { background: none; border: 0; color: var(--md-default-fg-color); }
+/* a chart drawn by the site: as wide as the column of text, edge to edge with the paragraphs, so that
+   its letters (14.5 units of 688 across) stand near the size of the legend's text; never narrower than
+   600 px, where its letters are still 12.6 px: in a narrower window it scrolls sideways, as a table does */
+.md-typeset figure.chart { width: 100%; margin-left: 0; margin-right: 0; text-align: left; }
+.md-typeset figure.chart .chart-scroll { overflow-x: auto; }
+.md-typeset figure.chart svg { display: block; width: 100%; min-width: 600px; height: auto; background: none; border: 0; color: var(--md-default-fg-color); }
+.md-typeset figcaption { max-width: 44rem; text-align: left; color: var(--md-default-fg-color); font-style: normal; font-size: 0.92em; }
+
+/* the video at the end of a chapter */
+.video-slot { margin: 1em 0; }
+.video-slot video { width: 100%; max-width: 54rem; border: 0; border-radius: 0.3rem; background: #14181c; }
+/* a video that is still to be made: one plain line, no box */
+.video-slot.waiting { max-width: 44rem; color: var(--md-default-fg-color); }
+
+/* the line that says on which version a chapter was checked */
+.checked { margin-top: 2.5em; padding-top: 0.6em; border-top: 1px solid var(--tut-line); color: var(--md-default-fg-color); font-size: 0.9em; }
+
+/* a sentence marked with the class todo: a pale yellow ground and brown text */
+.todo { background: #fbf3df; color: #855600; padding: 0 0.25em; }
+
+/* tables of files and columns read better with a little less air */
+.md-typeset table:not([class]) th, .md-typeset table:not([class]) td { padding: 0.55em 0.9em; }
+
+/* a picture that is still to be made: one plain line that says what it will show, no box */
+.md-typeset figure.shot-waiting { margin-left: 0; margin-right: 0; width: auto; text-align: left; }
+.md-typeset figure.shot-waiting div { max-width: 44rem; color: var(--md-default-fg-color); }
+
+/* The bar at the top stands on the ground of the page, as the head of the launcher does: white in the
+   light scheme, the dark ground in the dark one, with a hairline as its lower edge. So the SWATrust
+   symbol shows the ground it was drawn for through the lines cut into it. Beside it the bar shows the
+   word "SWATrust" alone (overrides/partials/site_name.html), in the two colors it has in the
+   launcher's logo in the light scheme and in white in the dark scheme, as every text of that scheme
+   is. The title of the page, which takes the word's place once the page is scrolled, the search field
+   and the switch between the schemes take the ink of the page's titles.
+   The symbol has the height the launcher draws it at (28 px in a window of the usual width), and the
+   title stands as near to it as the word does in the launcher's logo, a third of the symbol's height.
+   A narrow window shows no symbol in the bar, and its title keeps the theme's place beside the menu
+   button; the head of the list of chapters, which such a window opens, follows the same colors. A wide
+   window shows the name in the bar only, not a second time above the list of chapters. */
+[data-md-color-scheme="default"] { --tut-swat: #12589f; --tut-rust: #8a4b2a; --tut-field: #eef1f4; --tut-field-hover: #e3ecf6; }
+[data-md-color-scheme="slate"] { --tut-swat: var(--tut-ink); --tut-rust: var(--tut-ink); }
+.md-header, .md-nav--primary .md-nav__title[for="__drawer"] {
+  --md-primary-fg-color: var(--md-default-bg-color);
+  --md-primary-bg-color: var(--tut-ink);
+  --md-primary-bg-color--light: var(--tut-ink);
+}
+.md-header, .md-header--shadow { box-shadow: 0 1px 0 var(--tut-line); }
+.tut-swat { color: var(--tut-swat); }
+.tut-rust { color: var(--tut-rust); }
+.md-header__button.md-logo { padding: 0.3rem; }
+.md-header__button.md-logo img { width: 1.4rem; height: 1.4rem; }
+[data-md-color-scheme="default"] .md-logo img.tut-mark--dark,
+[data-md-color-scheme="slate"] .md-logo img.tut-mark--light { display: none; }
+@media screen and (min-width: 60em) {
+  /* the search field at rest: a light fill on the white bar; the dark scheme keeps the theme's darker fill */
+  [data-md-color-scheme="default"] .md-search__form { background-color: var(--tut-field); }
+  [data-md-color-scheme="default"] .md-search__form:hover { background-color: var(--tut-field-hover); }
+}
+@media screen and (min-width: 76.25em) {
+  [dir="ltr"] .md-header__title { margin-left: 0; }
+  .md-nav--primary > .md-nav__title[for="__drawer"] { display: none; }
+}
+
+/* a table with many number columns: less air, so that it fits the column of text */
+.md-typeset .wide table:not([class]) { font-size: 0.66rem; }
+.md-typeset .wide table:not([class]) th, .md-typeset .wide table:not([class]) td { padding: 0.5em 0.5em; min-width: 0; }

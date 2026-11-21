@@ -1,0 +1,23 @@
+{#- The page for an address that is not in the tutorial. It stands by itself: its style is in the page and
+    it loads no file, because the theme's own page names its files from the root of the host, which fails
+    when the site lies in a folder of a host. The link works for an address one level below the site's
+    first page, where every page of the tutorial lies. -#}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found - {{ config.site_name }}</title>
+<style>
+  body { font-family: "Source Sans 3", Arial, Helvetica, sans-serif; line-height: 1.6; margin: 4em auto;
+         max-width: 34em; padding: 0 1.2em; color: #14181c; background: #ffffff; }
+  h1 { font-weight: 600; }
+  a { color: #12589f; }
+</style>
+</head>
+<body>
+<h1>Page not found</h1>
+<p>This address is not a page of the {{ config.site_name }}.</p>
+<p><a href="index.html">Open the first page of the tutorial</a></p>
+</body>
+</html>

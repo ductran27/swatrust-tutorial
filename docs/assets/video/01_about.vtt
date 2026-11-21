@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:05.080
+This video says what SWATrust is and what
+the four views of its page do.
+
+00:00:05.580 --> 00:00:08.590
+SWATrust is a port of SWAT+ to the Rust
+language,
+
+00:00:08.590 --> 00:00:11.170
+with a launcher that runs in your browser.
+
+00:00:11.370 --> 00:00:14.595
+SWAT+ is the Soil and Water Assessment
+Tool Plus,
+
+00:00:14.595 --> 00:00:17.030
+a watershed model written in Fortran.
+
+00:00:17.230 --> 00:00:20.583
+SWATrust reads the input files of a SWAT+
+model,
+
+00:00:20.583 --> 00:00:26.380
+the files of its TxtInOut folder, and writes
+output tables in the formats of SWAT+.
+
+00:00:26.880 --> 00:00:28.640
+SWATrust has two programs.
+
+00:00:28.840 --> 00:00:30.680
+The engine simulates a model.
+
+00:00:30.880 --> 00:00:34.353
+The launcher is a page in the web browser
+of your computer,
+
+00:00:34.353 --> 00:00:38.590
+on which you choose models, run them, look
+at the results and calibrate.
+
+00:00:39.091 --> 00:00:41.521
+The left column of the page names four
+views.
+
+00:00:42.023 --> 00:00:46.643
+In Set-up, you choose the models, the
+years of the run and the output tables.
+
+00:00:52.399 --> 00:00:55.269
+In Run, you start a run, watch it and stop
+it.
+
+00:00:59.741 --> 00:01:03.440
+In Results, you look at the flow and the
+water balance of a run,
+
+00:01:03.440 --> 00:01:05.001
+and open its output folder.
+
+00:01:08.551 --> 00:01:13.851
+In Calibration, you calibrate a model on
+measured flow and analyze its uncertainty.
+
+00:01:14.351 --> 00:01:21.991
+Quick start downloads one basin, 02070002,
+North Branch Potomac, and runs it.

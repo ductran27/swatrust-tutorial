@@ -1,0 +1,13 @@
+{#- The link to the public repository in the bar at the top, shown only when mkdocs.yml names one
+    (repo_url). It is the theme's block without its `data-md-component` mark: with that mark the theme's
+    script asks the repository's host for counts when a page opens. Here the link is a plain one, and a
+    page asks no outside host for anything. -#}
+<a href="{{ config.repo_url }}" title="{{ lang.t('source') }}" class="md-source">
+  <div class="md-source__icon md-icon">
+    {% set icon = config.theme.icon.repo or "fontawesome/brands/git-alt" %}
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  </div>
+  <div class="md-source__repository">
+    {{ config.repo_name }}
+  </div>
+</a>

@@ -1,0 +1,214 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:03.504
+This video shows how to put a band of
+uncertainty
+
+00:00:03.504 --> 00:00:07.770
+around the simulated flow with SUFI-2 or
+GLUE, and how to read the band.
+
+00:00:08.270 --> 00:00:11.323
+The Calibration page calls one run of the
+model
+
+00:00:11.323 --> 00:00:14.310
+with one set of parameter values a
+simulation.
+
+00:00:14.510 --> 00:00:18.000
+One simulation gives one simulated flow
+for each day.
+
+00:00:18.200 --> 00:00:21.265
+An uncertainty analysis makes many
+simulations,
+
+00:00:21.265 --> 00:00:26.480
+each with another set of parameter values,
+and keeps the simulated flow of each.
+
+00:00:26.680 --> 00:00:28.876
+The band is the range, on each day,
+
+00:00:28.876 --> 00:00:32.390
+between a low and a high value of these
+simulated flows.
+
+00:00:32.891 --> 00:00:34.458
+This video uses the model,
+
+00:00:34.458 --> 00:00:39.341
+the measured flow file and the three periods
+of the video Calibrate and validate.
+
+00:00:39.842 --> 00:00:44.945
+In Set-up, click Clear choice and tick the
+model 01020003,
+
+00:00:44.945 --> 00:00:48.112
+so that it is the only model chosen.
+
+00:00:49.841 --> 00:00:52.551
+Click Calibration, the fourth of the four
+views.
+
+00:00:52.751 --> 00:00:54.521
+The box Model names the model.
+
+00:00:55.022 --> 00:00:57.142
+In the bar Method, click SUFI-2.
+
+00:00:59.060 --> 00:01:01.010
+SUFI-2 works in iterations.
+
+00:01:01.210 --> 00:01:06.257
+An iteration draws its sets of parameter
+values by Latin hypercube sampling:
+
+00:01:06.257 --> 00:01:11.770
+the range of each parameter is cut into equal
+parts, and each part gives one value.
+
+00:01:11.970 --> 00:01:16.009
+The band of the iteration is formed, on
+each day,
+
+00:01:16.009 --> 00:01:19.390
+by the 2.5 % and the 97.5 % values of the
+
+00:01:19.390 --> 00:01:23.100
+simulated flows of the sets of the
+iteration.
+
+00:01:23.300 --> 00:01:25.550
+Every simulation has the same weight.
+
+00:01:25.750 --> 00:01:26.507
+When it can,
+
+00:01:26.507 --> 00:01:31.240
+the iteration proposes new ranges of the
+parameters for the next iteration.
+
+00:01:31.740 --> 00:01:35.908
+Under Measured data, check that the box
+Measured file holds the path of
+
+00:01:35.908 --> 00:01:38.784
+the measured flow file of Calibrate and
+validate,
+
+00:01:38.784 --> 00:01:41.720
+and that the line under it counts the
+file's days.
+
+00:01:41.920 --> 00:01:47.130
+If the box is empty, click Download, as
+the video Calibrate and validate shows.
+
+00:01:55.643 --> 00:01:58.723
+Under Objective function, leave KGE daily.
+
+00:01:59.223 --> 00:02:02.123
+Under Years, type the years of the three
+periods.
+
+00:02:16.869 --> 00:02:20.439
+In Simulations per iteration, type 50 and
+press Enter.
+
+00:02:21.944 --> 00:02:23.554
+Click Start iteration 1.
+
+00:02:24.662 --> 00:02:27.735
+Under the boxes, a table lists three
+steps:
+
+00:02:27.735 --> 00:02:31.522
+Initial simulation, Iteration 1 and Band,
+new ranges.
+
+00:02:31.722 --> 00:02:34.032
+The block Result counts the simulations.
+
+00:03:25.533 --> 00:03:29.433
+The simulations take a while, and the
+video goes on when they have ended.
+
+00:03:32.639 --> 00:03:34.519
+The block Result now reads done.
+
+00:03:35.020 --> 00:03:37.925
+The chart Daily flow draws four things:
+
+00:03:37.925 --> 00:03:42.992
+the measured flow, the band named 95PPU,
+the middle line named 50 %,
+
+00:03:42.992 --> 00:03:46.420
+and the simulated flow of the best
+simulation.
+
+00:03:46.620 --> 00:03:49.050
+The shaded years are the calibration
+years.
+
+00:03:49.552 --> 00:03:54.182
+The block Result gives the table 95PPU,
+the table of the band.
+
+00:03:54.684 --> 00:03:57.879
+The p-factor is the share of the days with
+a measured
+
+00:03:57.879 --> 00:04:01.074
+flow on which the measured flow lies
+inside the band.
+
+00:04:01.575 --> 00:04:04.304
+The r-factor is the mean width of the
+band,
+
+00:04:04.304 --> 00:04:07.795
+divided by the standard deviation of the
+measured flow.
+
+00:04:08.295 --> 00:04:13.015
+A p-factor near 1 means that the band
+holds nearly all of the measured flows.
+
+00:04:13.215 --> 00:04:18.085
+A small r-factor means a narrow band compared
+with the spread of the measured flow.
+
+00:04:18.285 --> 00:04:23.094
+A wider band holds at least as many
+measured flows and has a larger r-factor,
+
+00:04:23.094 --> 00:04:25.405
+so the two factors are read together.
+
+00:04:25.906 --> 00:04:30.986
+The tab New ranges gives the range that
+the iteration suggests for each parameter.
+
+00:04:31.186 --> 00:04:34.296
+A new range can be wider than the range
+that was sampled.
+
+00:04:34.496 --> 00:04:37.396
+An iteration does not always narrow a
+range.
+
+00:04:40.535 --> 00:04:44.237
+The band is made only from the simulations
+that were made:
+
+00:04:44.237 --> 00:04:47.875
+parameter values drawn inside the ranges
+set on the page.
+
+00:04:48.075 --> 00:04:51.675
+No error of the measured flow or of the
+weather is added to it.

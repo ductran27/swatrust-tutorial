@@ -1,0 +1,72 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:04.530
+This video shows where a run writes its
+sediment in three places:
+
+00:00:04.530 --> 00:00:07.190
+the land, the channels and the basin
+outlet.
+
+00:00:07.690 --> 00:00:12.617
+The run of this video is the run of Run
+streamflow:
+
+00:00:12.617 --> 00:00:18.800
+the basin 02070002, 2000 to 2015, with a
+warm-up of three years.
+
+00:00:19.000 --> 00:00:21.140
+The page draws no chart of sediment,
+
+00:00:21.140 --> 00:00:24.170
+so this chapter reads the tables of the
+run folder.
+
+00:00:24.671 --> 00:00:28.661
+The run of Run streamflow already wrote
+the three files of this chapter.
+
+00:00:28.861 --> 00:00:30.271
+No new run is needed.
+
+00:00:30.771 --> 00:00:34.346
+For the land, the row of Output tables is
+Entire basin,
+
+00:00:34.346 --> 00:00:36.231
+Sediment and nutrients, Year.
+
+00:00:36.733 --> 00:00:39.713
+For the channels, it is Channels, Every
+channel, Year.
+
+00:00:41.370 --> 00:00:43.730
+In Results, click Open output folder.
+
+00:00:48.309 --> 00:00:51.709
+The output folder of the run now holds
+these three files.
+
+00:00:52.209 --> 00:00:54.970
+The first holds the sediment yield of the
+land:
+
+00:00:54.970 --> 00:00:58.319
+the sediment that leaves the land of the
+basin in a year.
+
+00:00:58.820 --> 00:01:02.010
+The second holds the sediment budget of
+every channel.
+
+00:01:02.512 --> 00:01:04.888
+The record of the basin outlet holds the
+
+00:01:04.888 --> 00:01:07.502
+sediment that passes the outlet on each
+day.
+
+00:01:08.003 --> 00:01:11.313
+The chapter adds up each of the three for
+every printed year.

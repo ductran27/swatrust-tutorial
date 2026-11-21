@@ -1,0 +1,231 @@
+WEBVTT
+
+00:00:00.250 --> 00:00:03.182
+This video shows how to get a SWAT+ model
+of
+
+00:00:03.182 --> 00:00:06.180
+a United States basin and add it to
+SWATrust.
+
+00:00:06.680 --> 00:00:08.710
+Open Set-up and look under the map.
+
+00:00:08.910 --> 00:00:11.912
+The page lists the basins of the data set
+there,
+
+00:00:11.912 --> 00:00:15.540
+each with its code, its name and the size
+of its download.
+
+00:00:16.040 --> 00:00:19.158
+Type the code of the basin, or a part of
+its name,
+
+00:00:19.158 --> 00:00:21.590
+in the box Code or name above the list.
+
+00:00:21.790 --> 00:00:25.840
+For this video, type 11140204.
+
+00:00:26.341 --> 00:00:29.651
+Choose the form of the model with the two
+buttons above the list.
+
+00:00:29.851 --> 00:00:33.165
+Basin alone leaves out the inflow from
+upstream basins,
+
+00:00:33.165 --> 00:00:36.781
+and With inflow from upstream brings in
+their daily outflow.
+
+00:00:36.981 --> 00:00:39.171
+For this video, leave Basin alone.
+
+00:00:39.673 --> 00:00:41.163
+Click the row of the basin.
+
+00:00:41.363 --> 00:00:44.589
+The line under the list gives the size of
+the download,
+
+00:00:44.589 --> 00:00:47.463
+the size on disk and the free space of
+your disk.
+
+00:00:47.966 --> 00:00:49.442
+In the map of all basins,
+
+00:00:49.442 --> 00:00:54.106
+a click on a basin that is not among your
+models marks its row in the same way.
+
+00:00:54.609 --> 00:00:55.639
+Click Download.
+
+00:00:57.894 --> 00:01:00.114
+The basin is added to the list Models.
+
+00:01:04.834 --> 00:01:09.314
+You can also add a model folder that you
+already have: click Add a model folder.
+
+00:01:09.514 --> 00:01:12.124
+A dialog lists the folders of your
+computer.
+
+00:01:14.120 --> 00:01:15.810
+Go to the folder of the model.
+
+00:01:24.940 --> 00:01:27.090
+Read the line at the foot of the dialog.
+
+00:01:27.290 --> 00:01:31.820
+For a model it says: This folder is a
+model, it holds file.cio.
+
+00:01:32.321 --> 00:01:33.591
+Click Add this folder.
+
+00:01:37.319 --> 00:01:41.359
+The model is now in the list Models, and
+it is chosen for the next run.
+
+00:01:42.165 --> 00:01:44.585
+Click the row of a model in the list
+Models.
+
+00:01:44.785 --> 00:01:47.845
+The column Paths and period then shows
+that model.
+
+00:01:50.972 --> 00:01:54.222
+The click on the row does not change which
+models are chosen
+
+00:01:54.222 --> 00:01:57.202
+for the run; the tick at the left of the
+row does that.
+
+00:02:00.230 --> 00:02:01.710
+Under the list is the map.
+
+00:02:01.910 --> 00:02:03.405
+It opens on All basins,
+
+00:02:03.405 --> 00:02:08.150
+which shows the basins of the data set in
+the conterminous United States.
+
+00:02:08.350 --> 00:02:13.340
+This basin draws the model in relief, with
+its streams and a red dot at its outlet.
+
+00:02:19.299 --> 00:02:20.716
+In the map of all basins,
+
+00:02:20.716 --> 00:02:24.286
+a click on a basin of yours ticks its
+model in the list Models,
+
+00:02:24.286 --> 00:02:26.439
+and a second click takes the tick out.
+
+00:02:29.260 --> 00:02:33.700
+A basin that lies below another basin
+receives the flow of that basin.
+
+00:02:33.900 --> 00:02:36.315
+In a model, this flow enters at an inlet,
+
+00:02:36.315 --> 00:02:39.790
+and a point-source file of the model gives
+it for each day.
+
+00:02:44.117 --> 00:02:51.137
+For the basin 11140204, the block of the
+model shows two lines above Model folder.
+
+00:02:51.337 --> 00:02:56.081
+The line No inflow at 1 inlet says that an
+inlet has no inflow data,
+
+00:02:56.081 --> 00:02:57.407
+so its inflow is 0.
+
+00:02:57.907 --> 00:03:00.163
+The line Inflow from upstream gives the
+
+00:03:00.163 --> 00:03:02.824
+number of inlets and the size of the
+download,
+
+00:03:02.824 --> 00:03:05.137
+and the button Download stands under it.
+
+00:03:05.639 --> 00:03:08.709
+In a run, each inlet takes the first
+source that it has.
+
+00:03:08.909 --> 00:03:12.742
+SWATrust runs the model of the basin
+upstream first when that
+
+00:03:12.742 --> 00:03:16.449
+model is in the list of models and an
+inlet needs its flow.
+
+00:03:16.949 --> 00:03:21.519
+Add the folder of the model upstream with
+Add a model folder, and take its tick out.
+
+00:03:34.081 --> 00:03:34.891
+Click Run.
+
+00:03:35.091 --> 00:03:39.341
+The line Upstream models under Checks
+before the run counts these models.
+
+00:03:42.769 --> 00:03:43.949
+Click Start the run.
+
+00:03:45.634 --> 00:03:49.686
+During the run, the table of the basins
+lists an upstream model with the
+
+00:03:49.686 --> 00:03:52.894
+line Upstream of and the name of the model
+that it feeds.
+
+00:03:53.094 --> 00:03:56.444
+The model below waits until the upstream
+model has ended.
+
+00:04:13.966 --> 00:04:17.570
+SWATrust also writes a file README.txt
+into the
+
+00:04:17.570 --> 00:04:21.636
+folder of each basin of a run whose model
+has inlets.
+
+00:04:21.836 --> 00:04:24.009
+The file has one line for each inlet,
+
+00:04:24.009 --> 00:04:26.946
+and the line names the source that the
+inlet took.
+
+00:04:27.446 --> 00:04:31.760
+If a model uses a part of SWAT+ that this
+version does not include,
+
+00:04:31.760 --> 00:04:34.786
+the engine does not run it, and Set-up
+says so.
+
+00:04:35.286 --> 00:04:39.536
+The next chapter, Run your own model, adds
+a model that you built yourself.

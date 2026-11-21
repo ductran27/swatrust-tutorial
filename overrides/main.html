@@ -1,0 +1,92 @@
+{#- The theme's page with one addition: the reader's choice of colors, light or dark.
+    The site is light until the reader uses the switch in the bar; nothing here reads the colors that the
+    reader's system is set to. The theme keeps the choice in the browser's store for the site, which holds
+    on a served address. A page opened from the disk may get a store of its own in some browsers, so the
+    choice would be lost at every move to another page. For such pages the choice is carried in two more
+    ways: in the name of the window, and on the address of every link to a page of the site. Each carrier
+    holds the choice with the second it was made in, and the newest one wins. Nothing leaves the reader's
+    computer. The theme reads the choice through its own two functions, before the page is first drawn. -#}
+{% extends "base.html" %}
+{% block extrahead %}
+<script>
+(function () {
+  var KEY = "__palette", NAME = "swatrust-tutorial-colors=", PARAM = "colors";
+  var SCHEMES = ["default", "slate"];          /* the order of theme.palette in mkdocs.yml */
+  var theme_get = __md_get, theme_set = __md_set;
+  var extra = location.protocol === "file:";   /* use the two carriers beside the browser's store */
+  try { localStorage.getItem(KEY); } catch (e) { extra = true; }
+
+  function parse(v) {                          /* "dark-t3x9k2" gives {s: "slate", t: seconds} */
+    var m = /^(light|dark)-([0-9a-z]{1,9})$/.exec(v || "");
+    return m ? {s: m[1] === "dark" ? "slate" : "default", t: parseInt(m[2], 36)} : null;
+  }
+  function word(c) { return (c.s === "slate" ? "dark" : "light") + "-" + c.t.toString(36); }
+  function palette(s) { return {index: SCHEMES.indexOf(s), color: {media: "", scheme: s, primary: "custom", accent: "custom"}}; }
+  function newest(a, b) { return b && (!a || b.t > a.t) ? b : a; }
+  function read() {
+    var best = null, p;
+    try { p = theme_get(KEY); if (p && p.color && p.t) best = {s: p.color.scheme === "slate" ? "slate" : "default", t: p.t}; } catch (e) {}
+    if (extra) {
+      if (window.name.indexOf(NAME) === 0) best = newest(best, parse(window.name.slice(NAME.length)));
+      try { best = newest(best, parse(new URLSearchParams(location.search).get(PARAM))); } catch (e) {}
+    }
+    return best;
+  }
+  function write(c) {
+    var p = palette(c.s); p.t = c.t;
+    try { theme_set(KEY, p); } catch (e) {}
+    if (!extra) return;
+    if (!window.name || window.name.indexOf(NAME) === 0) window.name = NAME + word(c);
+    try {
+      var u = new URL(location.href);
+      if (u.searchParams.get(PARAM) !== word(c)) { u.searchParams.set(PARAM, word(c)); history.replaceState(history.state, "", u.href); }
+    } catch (e) {}
+  }
+
+  var choice = read();                         /* null: the reader has not used the switch */
+  function scheme() { return choice ? choice.s : "default"; }
+  __md_get = function (key) {
+    if (key === KEY && arguments.length === 1) return palette(scheme());
+    return theme_get.apply(null, arguments);
+  };
+  __md_set = function (key, value) {
+    if (key === KEY && arguments.length === 2) {
+      var s = value && value.color && value.color.scheme === "slate" ? "slate" : "default";
+      if (s !== scheme()) {                    /* the reader used the switch */
+        choice = {s: s, t: Math.max(Math.floor(Date.now() / 1000), choice ? choice.t + 1 : 0)};
+        write(choice);
+      }
+      return;
+    }
+    return theme_set.apply(null, arguments);
+  };
+  if (choice) write(choice);
+
+  /* a link to another page of the site takes the choice with it */
+  function carry(a) {
+    if (!extra || !choice || a.protocol !== location.protocol || a.host !== location.host) return;
+    if (a.pathname.indexOf(__md_scope.pathname) !== 0) return;
+    if (!/(\.html?|\/)$/.test(a.pathname)) return;
+    try {
+      var u = new URL(a.href);
+      if (u.searchParams.get(PARAM) !== word(choice)) { u.searchParams.set(PARAM, word(choice)); a.href = u.href; }
+    } catch (e) {}
+  }
+  ["mousedown", "touchstart", "focusin", "click", "auxclick", "contextmenu"].forEach(function (name) {
+    document.addEventListener(name, function (e) {
+      var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+      if (a) carry(a);
+    }, true);
+  });
+
+  /* a page that the browser shows again from its memory (the back button) takes the newest choice */
+  window.addEventListener("pageshow", function () {
+    var c = newest(choice, read());
+    if (!c) return;
+    if (c !== choice) { choice = c; write(choice); }
+    var input = document.querySelector('input[name="__palette"][data-md-color-scheme="' + choice.s + '"]');
+    if (input && document.body && document.body.getAttribute("data-md-color-scheme") !== choice.s) input.click();
+  });
+})();
+</script>
+{% endblock %}

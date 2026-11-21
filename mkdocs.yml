@@ -1,0 +1,128 @@
+# SWATrust tutorial: site configuration.
+# Built offline: no font, script or style is loaded from the internet.
+site_name: SWATrust tutorial
+site_description: Step-by-step chapters for running SWAT+ models with SWATrust.
+site_author: Duc Tran   # the author of the tutorial, in the pages' metadata; a page's text names him only in the foot line (copyright, below)
+docs_dir: docs
+use_directory_urls: false
+
+# The public repository. No link to it is shown in the bar at the top: the three lines below stay comments.
+# With them set, the link would be a plain one (overrides/partials/source.html).
+# repo_url: https://github.com/ductran27/swatrust-tutorial
+# repo_name: swatrust-tutorial
+# edit_uri: ""
+# The public address of the site, when there is one. The pages do not need it: every link between them
+# is relative, so the folder works from a disk and in a folder of a host alike.
+# Prepared for Read the Docs, where the project is to be named "swatrust" and a first version is served
+# under /en/latest/, so the site's address there is https://swatrust.readthedocs.io/en/latest/ . The line
+# below takes that address from the host at build time; off the host the variable is not set, the line
+# gives nothing and the build is the same as without it. It stays a comment until the project exists.
+# site_url: !ENV READTHEDOCS_CANONICAL_URL
+
+# The line of ownership and license at the foot of every page, in the strip under the bar "Previous / Next"
+# (site.css). The tutorial and its videos are under CC BY 4.0;
+# the program's code has its own license, named on the page "Cite, license and versions".
+# This and site_author are the only places where a page carries a person's name.
+copyright: "© 2026 Duc Tran. This tutorial and its videos are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/."
+
+theme:
+  name: material
+  language: en
+  font: false            # the fonts are files of the site (docs/assets/css/site.css)
+  logo: assets/img/symbol.svg   # the mark's form for a light ground; the dark scheme shows extra.logo_dark (overrides/partials/logo.html)
+  favicon: assets/img/symbol.svg
+  custom_dir: overrides  # the page for an address that is not in the tutorial, the bar at the top, and the repository link
+  palette:               # two color schemes and a switch in the bar: light (the first, so the site is light
+                         # until the reader chooses), dark. No entry reads the reader's system setting.
+                         # overrides/main.html keeps the choice from page to page and relies on this order.
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Light colors. Switch to the dark colors
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Dark colors. Switch to the light colors
+  features:              # never content.action.edit or content.action.view: the tutorial offers no link to a
+                         # page's source, and nothing for download
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - content.code.copy
+
+plugins:
+  - search
+  - offline              # search and links work when the folder is opened from the disk
+
+extra:
+  generator: false
+  logo_dark: assets/img/symbol_dark.svg   # the mark's form for a dark ground, shown in the dark scheme
+  polyfills:
+    - assets/vendor/iframe-worker/shim.js   # the search helper for a folder opened from the disk, as a file of the site
+
+extra_css:
+  - assets/vendor/katex/katex.min.css
+  - assets/css/site.css
+
+extra_javascript:
+  - assets/vendor/katex/katex.min.js
+  - assets/vendor/katex/contrib/auto-render.min.js
+  - assets/js/math.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.snippets:
+      base_path:
+        - !relative $config_dir
+      check_paths: true
+
+nav:
+  - Home: index.md
+  - Start here:
+      - Download: download.md
+      - Get to know SWATrust: about.md
+      - Quick start: quick-start.md
+      - Install and start SWATrust: install.md
+  - Models:
+      - Get a model: models.md
+      - Run your own model: own-model.md
+  - Run:
+      - Run streamflow: run-streamflow.md
+  - Results:
+      - Find the outputs: outputs.md
+      - Read the results: read-results.md
+  - More to run:
+      - Run sediment: run-sediment.md
+      - Run water quality: run-water-quality.md
+      - Run several basins: run-many.md
+  - Calibration:
+      - Calibrate and validate: calibrate.md
+      - Calibrate on several gauges and variables: calibrate-several.md
+      - Uncertainty analysis: uncertainty.md
+  - Change a model:
+      - Change inputs: change-inputs.md
+  - Reference:
+      - The command line: command-line.md
+      - Messages and troubleshooting: troubleshooting.md
+      - File reference: files.md
+      - Glossary: glossary.md
+      - Cite, license and versions: cite.md
+      - Licenses of the site's parts: licenses.md
