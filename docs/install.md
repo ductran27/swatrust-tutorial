@@ -6,15 +6,15 @@ The SWATrust launcher runs on Linux, macOS and Windows. This tutorial is written
 
 ## What you need
 
-SWATrust needs nothing installed. The launcher, the engine, the maps and one basin are in its folder.
+SWATrust needs nothing installed. The launcher, the engine and the maps are in its folder.
 
 | | |
 |---|---|
-| A computer | Linux on an x86-64 processor |
+| A computer | Linux on an x86-64 processor, macOS on Apple silicon, or Windows on an x86-64 processor |
 | A web browser | the one you already use |
 | Disk space | room for the SWATrust folder and for the runs |
 
-The engine needs a Linux with the GNU C library (glibc) 2.34 or newer.
+On Linux, the engine needs the GNU C library (glibc) 2.34 or newer.
 
 Each run holds a copy of its model and the output tables. Before each run, the page gives the disk space that the run needs and the free space of the disk, under **Checks before the run**.
 
