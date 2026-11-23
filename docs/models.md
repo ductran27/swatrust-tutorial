@@ -92,9 +92,9 @@ The "i" of the first line names the inlet: "Inlet 111402050307 has no inflow dat
 
 1. In the line **Inflow from upstream**, click **Download**.
 
-    SWATrust fetches the inflow file of the inlet into the folder of the model. The folder of 11140204 already holds this file, empty; the download fills it, and no other file of the folder changes. Under the list of basins the page then reads "1 inflow file of the data set is in the folder of 11140204." The line **Inflow from upstream** now gives the number of inlets and the last day of the file, "to 2025-01-01", and the line "No inflow at 1 inlet" is gone.
+    SWATrust fetches the inflow file of the inlet into the folder of the model. The folder of 11140204 already holds this file, empty; the download fills it, and no other file of the folder changes. Under the list of basins the page then reads "1 inflow file of the data set is in the folder of 11140204." The line **Inflow from upstream** now gives the number of inlets and the last day of the file, "to 2025-12-31", and the line "No inflow at 1 inlet" is gone.
 
-The inflow files of the data set hold every day from 1 January 1997 to 1 January 2025, except one inflow file of the model 07010206, which ends on 9 September 2003. At an inlet, a run takes no inflow before the first day or after the last day of its file, unless the model upstream is in the list **Models**; SWATrust then runs that model first and takes its outflow. Except for that one file, 2024 is the last whole year with inflow.
+The inflow files of the data set hold every day from 1 January 1997 to 31 December 2025, with the exceptions that the README of the data set names. At an inlet, a run takes no inflow before the first day or after the last day of its file, unless the model upstream is in the list **Models**; SWATrust then runs that model first and takes its outflow.
 
 ### Which flow an inlet takes
 
@@ -113,7 +113,7 @@ Inlet 111402050307: no inflow, 0 each day. No USGS gauge matches it, and its inf
 After the download, the line of a new run read:
 
 ```text
-Inlet 111402050307: the model's inflow file 111402050307_con.out (upstream model 11140205), 1997-01-01 to 2025-01-01.
+Inlet 111402050307: the model's inflow file 111402050307_con.out (upstream model 11140205), 1997-01-01 to 2025-12-31.
 ```
 
 ### Upstream models in a run

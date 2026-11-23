@@ -49,8 +49,6 @@ print.prt
           3          0          0          0          0          1
 ```
 
-A model downloaded with inflow from upstream ends on 1 January of its last year: a run of 2000 to 2010 ends on 1 January 2010. Set-up says so under the year boxes: "The model sets its own last day: a run of these years ends on 1 January 2010, not at the end of 2010." For all of 2010, choose 2011 as the last year.
-
 ### Years the page refuses
 
 A period that the model cannot run is refused in Set-up, before any run, with the years that can be typed. Three cases, each with the sentence the page gave:
